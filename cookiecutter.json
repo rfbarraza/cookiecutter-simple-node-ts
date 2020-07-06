@@ -1,0 +1,16 @@
+{
+  "full_name": "Rene Barraza",
+  "emaik": "rfbarraza@gmail.com",
+  "github_username": "rfbarraza",
+
+  "project_name": "Simple Node TS",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "project_short_description": "Boilerplate for a node project written in Typescript",
+  "license": ["GNU AGPLv3",
+              "GNU GPLv3",
+              "GNU LGPLv3",
+              "Apache License 2.0",
+              "MIT License",
+              "BSD License",
+              "Not Licensed"]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "{{ cookiecutter.project_name }}",
+  "version": "0.1.0",
+  "author": "{{ cookiecutter.full_name }}",
+  "license": "{{ cookiecutter.license }}",
+  "description": "{{ cookiecutter.project_short_description }}",
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/main.js",
+    "test": "npx jest",
+    "docs": "npx typedoc --hideGenerator --stripInternal --readme README.md  --exclude **/*.spec.ts --out docs src",
+    "clean": "rm build/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npx jest"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^25.2.3",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "precise-commits": "^1.0.2",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.15.0",
+    "typedoc": "^0.17.8",
+    "typemoq": "^2.1.0",
+    "typescript": "^3.9.3"
+  }
+}
