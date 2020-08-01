@@ -17,7 +17,7 @@
  */
 export class Main {
 
-  constructor(private readonly args: string[][] = []) {}
+  constructor(private readonly args: string[] = []) {}
 
   public run(): number {
     // tslint:disable-next-line:no-console
@@ -32,9 +32,9 @@ export class Main {
  * @param args
  * @return result code
  */
-function main (args: string[][] = []): number {
+function main (args: string[] = []): number {
   const inst = new Main(args);
   return inst.run();
 }
 
-main();
+main(process.argv);

@@ -12,6 +12,6 @@ npm-debug.log
 node_modules
 *.orig
 coverage
-build/.clasp.json
-build/*
+dist/.clasp.json
+dist/*
 docs

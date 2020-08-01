@@ -4,13 +4,13 @@
   "author": "{{ cookiecutter.full_name }}",
   "license": "{{ cookiecutter.license }}",
   "description": "{{ cookiecutter.project_short_description }}",
-  "main": "build/main.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
-    "start": "node build/main.js",
+    "start": "node dist/main.js",
     "test": "npx jest",
     "docs": "npx typedoc --hideGenerator --stripInternal --readme README.md  --exclude **/*.spec.ts --out docs src",
-    "clean": "rm build/*.js"
+    "clean": "rm dist/*.js"
   },
   "husky": {
     "hooks": {

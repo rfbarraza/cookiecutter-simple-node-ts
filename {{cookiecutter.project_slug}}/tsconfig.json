@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2018",
     "lib": ["ES2018"],
-    "module": "UMD",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
@@ -10,7 +10,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "inlineSourceMap": true,
-    "outDir": "build"
+    "outDir": "dist"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/*.spec.ts"],
